@@ -1,26 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Gà Chọi Livestream - Đang phát triển
-        </p>
-        <a
-          className="App-link"
-          href="https://www.fb.com/lam.lethanh.fis"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Liên hệ tác giả
-        </a>
-
-      </header>
-    </div>
+    <>
+    <Header></Header>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
+    </Router>
+    <Footer></Footer>
+    </>
   );
 }
 
