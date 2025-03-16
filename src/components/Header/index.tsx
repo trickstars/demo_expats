@@ -16,7 +16,7 @@ function Header() {
                     </div> */}
                     <div className="header__logo flex-col">
                         <Link to='/'>
-                        <img src="https://i.ibb.co/HW4Q67X/CLB-1.png" alt="CLB-1" />
+                        <img src="https://i.ibb.co/B5XFx4Tq/logo.png" alt="logo" />
                         </Link>
                     </div>
                     {/* <div className="flex-col flex-right"></div> */}

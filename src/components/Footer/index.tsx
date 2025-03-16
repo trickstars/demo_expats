@@ -4,8 +4,7 @@ function Footer() {
             <div className="footer flex-row">
                 <div className="flex-col footer-section">
                     <div className="footer__logo">
-                        <img src="https://gachoitieuphong.com/wp-content/uploads/2024/10/LOGO-GA-CHOI-TIEU-PHONG-1.png" 
-                            alt="CLB Bán gà Phú Hòa" />
+                    <img src="https://i.ibb.co/B5XFx4Tq/logo.png" alt="logo" />
                     </div>
                     <div className="footer__decription">
                         <p>👉 CLB Gà Chọi Lê Tuấn vần xổ gà trực tiếp 18h30  hàng ngày</p>

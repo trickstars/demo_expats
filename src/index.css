@@ -52,7 +52,7 @@ li {
 }
 
 .header-main {
-  height: 91px;
+  height: 150px;
   background-color: black;
   position: sticky;
 }
@@ -65,10 +65,8 @@ li {
 .header__logo a,
 .header__logo a img {
   display: block;
-  width: 200px;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 40%;
+  width: 300px;
+  height: 150px;
 }
 
 .nav {
