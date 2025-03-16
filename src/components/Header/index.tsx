@@ -16,8 +16,7 @@ function Header() {
                     </div> */}
                     <div className="header__logo flex-col">
                         <Link to='/'>
-                            <img src="https://gachoitieuphong.com/wp-content/uploads/2024/10/LOGO-GA-CHOI-TIEU-PHONG-1.png" 
-                            alt="CLB Bán gà Phú Hòa" /> 
+                        <img src="https://i.ibb.co/HW4Q67X/CLB-1.png" alt="CLB-1" />
                         </Link>
                     </div>
                     {/* <div className="flex-col flex-right"></div> */}
