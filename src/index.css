@@ -20,7 +20,7 @@ code {
 }
 
 a {
-  all: unset;
+  /* all: unset; */
   display: inline-block;
   color: white;
 }
@@ -59,12 +59,16 @@ li {
 
 .header__logo {
   padding: 10px 0;
+  vertical-align: middle;  
 }
 
 .header__logo a,
 .header__logo a img {
   display: block;
+  width: 200px;
   height: 100%;
+  object-fit: cover;
+  object-position: 50% 40%;
 }
 
 .nav {
