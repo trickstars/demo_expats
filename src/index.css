@@ -11,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
@@ -40,7 +41,7 @@ li {
 
 .flex-row {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   height: 100%;
@@ -130,6 +131,19 @@ li {
 
 .footer-section p {
   margin-bottom: 22.8px;
+}
+
+
+@media screen  and (max-width: 920px) {
+  .footer-section.flex-col {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-section.flex-col {
+    width: 100%;
+  }
+  
 }
 
 /* .flex-left {
