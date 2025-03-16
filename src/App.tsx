@@ -11,6 +11,7 @@ function App() {
   return (
     <>
     <Router>
+      <div className="container">
     <Header></Header>
       <div className="App">
         <Routes>
@@ -19,6 +20,7 @@ function App() {
         </Routes>
       </div>
     <Footer></Footer>
+      </div>
     </Router>
     </>
   );
