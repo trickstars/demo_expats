@@ -31,7 +31,6 @@ li {
   list-style: none;
 }
 
-
 .container {
   padding: 0 15px;
   max-width: 1080px;
@@ -50,6 +49,8 @@ li {
   height: 100%;
 }
 
+/* HEADER */
+
 .header-main {
   height: 91px;
   background-color: black;
@@ -65,6 +66,8 @@ li {
   display: block;
   height: 100%;
 }
+
+/* HEADER NAVIGATION BAR */
 
 .nav {
   background-color: #0A0A0A;
@@ -94,6 +97,27 @@ li {
   font-size: 12.8px;
   font-weight: 700;
 }
+
+/* DESCRIPTION AREA */
+
+.description-area {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}
+
+.description-area .flex-col {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  width: 50%;
+}
+
+.description-area .flex-col:last-child {
+  width: 100%;
+}
+
+/* FOOTER */
 
 .footer {
   background-color: black;
