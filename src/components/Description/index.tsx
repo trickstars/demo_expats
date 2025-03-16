@@ -4,11 +4,14 @@ function Description() {
             <div id="description-col" className="flex-col">
                 <div id="description-content">
                     <div className="icon-box">
-                        <div className="icon-box-img"></div>
+                        <div className="icon-box-img">
+                            <img src="https://gachoitieuphong.com/wp-content/uploads/2024/10/cropped-LOGO-GA-CHOI-TIEU-PHONG-2-300x300.png" 
+                            alt="Logo CLB Gà Chọi Lê Tuấn" />
+                        </div>
                         <div className="icon-box-content">
-                            <h4>CLB Gà Chọi Lê Tuấn</h4>
-                            <p>Xổ vần gà trực tiếp 18h30 hàng ngày tại Khu Phố Phú Thứ, Thị Trấn Phú Thứ, Huyện Tây Hòa, Tỉnh Phú Yên
-                            Hotline liên hệ: 0345357695</p>
+                            <h3 className="color-highlight">CLB Gà Chọi Lê Tuấn</h3>
+                            <p>Xổ vần gà trực tiếp 18h30 hàng ngày tại Khu Phố Phú Thứ, Thị Trấn Phú Thứ, Huyện Tây Hòa, Tỉnh Phú Yên </p>
+                            <span>Hotline liên hệ: <span className="color-highlight">0345357695</span></span>
                         </div>
                     </div>
 
