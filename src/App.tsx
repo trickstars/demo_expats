@@ -6,6 +6,7 @@ import VideoList from './pages/VideoList';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path='/video-xo-ga' element={<VideoList />} />
         </Routes>
+        <Carousel></Carousel>
       </div>
     <Footer></Footer>
       </div>

@@ -1,0 +1,54 @@
+.carousel-container {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Style cho carousel */
+  .carousel {
+    display: flex; /* Đặt các hình ảnh ngang */
+    transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển động */
+  }
+  
+  /* Style cho hình ảnh */
+  .carousel-image {
+    width: 100%;
+    border-radius: 10px;
+    flex-shrink: 0; /* Đảm bảo các hình ảnh không bị thu nhỏ */
+  }
+  
+  /* Điều khiển (nút next, prev) */
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  /* Nút Previous */
+  .prev,
+  .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev:focus,
+  .next:focus {
+    outline: none;
+  }
