@@ -6,20 +6,21 @@
     overflow: hidden;
     border-radius: 10px;
   }
-  
-  /* Style cho carousel */
-  .carousel {
-    display: flex; /* Đặt các hình ảnh ngang */
-    transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển động */
-  }
-  
-  /* Style cho hình ảnh */
-  .carousel-image {
-    width: 100%;
-    border-radius: 10px;
-    flex-shrink: 0; /* Đảm bảo các hình ảnh không bị thu nhỏ */
-  }
-  
+  /*   
+    /* Style cho carousel */
+    .carousel {
+      display: flex; /* Đặt các hình ảnh ngang */
+      transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển động */
+    }
+    
+    /* Style cho hình ảnh */
+    .carousel-image {
+      height: 100px;;
+      width: 100%;
+      border-radius: 10px;
+      flex-shrink: 0; /* Đảm bảo các hình ảnh không bị thu nhỏ */
+    }
+    */
   /* Điều khiển (nút next, prev) */
   .controls {
     position: absolute;
