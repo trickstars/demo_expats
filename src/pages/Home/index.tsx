@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import VideoListContainer from "../../components/VideoListContainer";
 import ChatBox from "../../components/ChatBox";
 import './index.css'
+import Description from "../../components/Description";
 function Home() {
     return (
         
@@ -48,6 +49,7 @@ function Home() {
           </div>
           <VideoListContainer numCol={3}></VideoListContainer>
         </div>
+        <Description></Description>
       </div>
     )
 }

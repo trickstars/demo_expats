@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import VideoListContainer from "../../components/VideoListContainer"
 import './index.css'
+import Description from "../../components/Description"
 
 function VideoList() {
     return (
@@ -26,7 +27,7 @@ function VideoList() {
 
                 </div>
             </div>
-
+            <Description></Description>
         </div>
     )
 }

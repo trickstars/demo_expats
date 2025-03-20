@@ -1,0 +1,97 @@
+.text-bold {
+    font-weight: bold !important;
+}
+
+.horizontal-divider {
+    margin: 30px auto;
+    height: 3px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+#video-detail {
+    padding-top: 30px;
+}
+
+#video-detail>div {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.video-content {
+    flex: 3;
+}
+
+.video-content>.video-header {
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.video-content>.video-header>.video-title-detail {
+    font-family: "Roboto", sans-serif;
+    /* font-size: 27.2px; */
+}
+
+
+.video-content>.video-header>.video-meta {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 11.2px;
+    text-transform: uppercase;
+}
+
+.video-navigation {
+    border-top: 0.8px solid white;
+    border-bottom: 0.8px solid white;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 16px;
+}
+
+.next-video,
+.prev-video {
+    padding: 11.2px 0;
+    vertical-align: middle;
+    line-height: 38.4px;
+}
+
+.prev-video {
+    text-align: left;
+}
+
+.next-video {
+    border-left: 0.8px solid white;
+    text-align: right;
+}
+
+.next-video a,
+.prev-video a {
+    cursor: pointer;
+}
+
+.next-video i,
+.prev-video i {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.video-desc p {
+    text-align: left;
+    margin-bottom: 24px;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 16px;
+}
+
+.sidebar {
+    flex: 1;
+    border-left: 1px solid white;
+}
+
+.sidebar h3 {
+    text-transform: uppercase;
+    font-family: "Roboto Slab", sans-serif;
+    text-align: left;
+}
+
+.sidebar .title {
+    text-transform: uppercase;
+}

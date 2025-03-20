@@ -6,7 +6,7 @@ import VideoList from './pages/VideoList';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Description from './components/Description';
+import VideoDetail from './pages/VideoDetail';
 
 function App() {
   return (
@@ -18,9 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/video-xo-ga' element={<VideoList />} />
+          {/* temporary */}
+          <Route path='/video-chitiet' element={<VideoDetail />}></Route>
         </Routes>
       </div>
-    <Description></Description>
     <Footer></Footer>
       </div>
     </Router>
