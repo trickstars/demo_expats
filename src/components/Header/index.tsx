@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import './index.css'
 
 function Header() {
     return (
@@ -16,7 +17,8 @@ function Header() {
                     </div> */}
                     <div className="header__logo flex-col">
                         <Link to='/'>
-                        <img src="https://i.ibb.co/HW4Q67X/CLB-1.png" alt="CLB-1" />
+                        {/* <img src="https://i.ibb.co/B5XFx4Tq/logo.png" alt="logo" /> */}
+                        <img src="https://i.ibb.co/d0LZkVRj/Thie-t-ke-chu-a-co-te-n.png" alt="Thie-t-ke-chu-a-co-te-n" ></img>
                         </Link>
                     </div>
                     {/* <div className="flex-col flex-right"></div> */}

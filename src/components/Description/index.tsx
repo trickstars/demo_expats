@@ -1,5 +1,5 @@
 import Carousel from "../Carousel"
-
+import './index.css'
 function Description() {
 
     const image_carousel = [
@@ -44,21 +44,26 @@ function Description() {
                     <a href="https://www.google.com/maps/place/CLB+G%C3%A0+Ch%E1%BB%8Di+Ti%C3%AAu+Phong/@12.9911111,109.2351372,15z/data=!4m6!3m5!1s0x316fe94c43271e83:0x7bd335171cc78e16!8m2!3d12.9911111!4d109.2351372!16s%2Fg%2F11vh_bppkr?hl=vi&entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     >
-                        <img src="https://gachoitieuphong.com/wp-content/uploads/2024/10/FB-ga-choi-tieuphong-32.png"
-                        alt="Địa chỉ của chúng tôi" />
+                        <img className="contact-img" src="https://i.ibb.co/rRMPCZjQ/map-vector.png" alt="map-vector" />
                     </a>
                 </div>
                 <div id="tiktok">
                     <a href="https://www.tiktok.com/@tieuphonguytin" target="_blank">
-                        <img src="https://gachoitieuphong.com/wp-content/uploads/2024/05/tiktok-BUTTON.png" 
-                        alt="Kênh tiktok của chúng tôi" />
+                        <img className="contact-img" src="https://i.ibb.co/fZD1gkh/tiktok-vector.png" alt="tiktok-vector" />
                     </a>
                 </div>
             </div>
             <div id="slider" className="flex-col">
-                <Carousel images={image_carousel}></Carousel>
+                <Carousel></Carousel>
             </div>
-            <div id="contact-info" className="flex-col"></div>
+            <div id="contact-info" className="flex-col flex-row">
+                <div className="flex-item">
+                    <img src="https://i.ibb.co/mrzQSV60/zl-vip-vector.png" alt="" className="contact-img" />
+                </div>
+                <div className="flex-item">
+                    <img src="https://i.ibb.co/dJkZ92jS/fb-vector.png" alt="" className="contact-img" />
+                </div>
+            </div>
         </div>
     )
 } 

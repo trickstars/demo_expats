@@ -1,0 +1,38 @@
+/* FOOTER */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 17.6px;
+}
+
+.footer h2 {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 12.8px;
+}
+
+.footer.flex-row {
+    align-items: flex-start;
+}
+
+.footer__logo {
+    margin-bottom: 16px;
+}
+
+.footer img {
+    display: block;
+    max-width: 100%;
+}
+
+.footer-section.flex-col {
+    width: calc(100% / 3);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+.footer-section p {
+    margin-bottom: 22.8px;
+}

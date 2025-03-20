@@ -1,0 +1,50 @@
+/* HEADER */
+
+.header-main {
+    /* height: 150px; */
+    background-color: black;
+    position: sticky;
+}
+
+.header__logo {
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+.header__logo a,
+.header__logo a img {
+    display: block;
+    width: 400px;
+    height: 200px;
+}
+
+/* HEADER NAVIGATION BAR */
+
+.nav {
+    background-color: #0A0A0A;
+    height: 36px;
+}
+
+.nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav li {
+    display: block;
+    margin: 0 7px;
+    padding: 10px 0;
+}
+
+.nav ul li:first-child {
+    margin-left: 0;
+}
+
+.nav li a {
+    font-family: "Roboto", sans-serif;
+    line-height: 16px;
+    font-size: 12.8px;
+    font-weight: 700;
+}
