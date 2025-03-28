@@ -12,18 +12,18 @@ function App() {
   return (
     <>
     <Router>
-      <div className="container">
+    <div className="App">
     <Header></Header>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/video-xo-ga' element={<VideoList />} />
-          {/* temporary */}
-          <Route path='/video-chitiet' element={<VideoDetail />}></Route>
-        </Routes>
-      </div>
+        <main className='container'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path='/video-xo-ga' element={<VideoList />} />
+            {/* temporary */}
+            <Route path='/video-chitiet' element={<VideoDetail />}></Route>
+          </Routes>
+        </main>
     <Footer></Footer>
-      </div>
+    </div>
     </Router>
     </>
   );
