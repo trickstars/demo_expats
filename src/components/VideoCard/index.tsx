@@ -8,7 +8,7 @@ interface VideoCardProps {
 }
 
 const VideoCard: React.FC<VideoCardProps> = ({col}) => {
-  const thumbnail = "https://gachoitieuphong.com/wp-content/uploads/2024/10/cropped-LOGO-GA-CHOI-TIEU-PHONG-2-300x300.png";
+  const thumbnail = "./imgs/thumbnail.jpg";
   const title = "Chua co";
   return (
     <div className="video-card" 
@@ -19,7 +19,7 @@ const VideoCard: React.FC<VideoCardProps> = ({col}) => {
     >
       <img src={thumbnail} alt={title} className="thumbnail" />
       <div className="video-info">
-        <h3>{title}</h3>
+        <h5>{title}</h5>
         <p>Co j dau ma hien thi</p>
       </div>
     </div>

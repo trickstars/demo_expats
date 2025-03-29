@@ -6,7 +6,6 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s;
-    width: 250px;
     padding: 0 15px;
 }
 
@@ -16,7 +15,7 @@
 
 .thumbnail {
     width: 100%;
-    height: 150px;
+    aspect-ratio: 16/9;
     object-fit: cover;
 }
 
@@ -24,9 +23,11 @@
     padding: 8px;
 }
 
-.video-info h3 {
+.video-info h5 {
     margin: 0;
     font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .video-info p {
@@ -34,3 +35,12 @@
     color: #666;
     font-size: 0.9rem;
 }
+
+/* @media screen and (max-width: 920px) {
+} */
+
+/* @media screen and (max-width: 768px) {
+    .video-card {
+        flex-basis: 100%;
+    }
+} */
