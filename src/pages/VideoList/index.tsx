@@ -20,7 +20,7 @@ function VideoList() {
             <div id="link-to-live">
                 <div className="title">
                     <h2 className="color-highlight">trực tiếp vào 18h30 hôm nay  19/03 tại CLB Gà Chọi Tiêu Phong</h2>
-                    <span className="phone-num color-highlight">☎ 0345357695</span>
+                    <span> ☎️ <span className="phone-num color-highlight"> 0345357695</span></span> 
                 </div>
 
                 <div className="link-live">

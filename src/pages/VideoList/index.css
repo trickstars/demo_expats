@@ -14,9 +14,19 @@
     margin-bottom: 20px;
 }
 
-#link-to-live .title {}
+#link-to-live {
+    margin: 5rem auto;
+}
+
+#link-to-live .title {
+    text-align: center;
+}
 
 #link-to-live .title h2 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: svar(--secondary-font); */
     text-transform: uppercase;
+}
+
+#link-to-live .phone-num {
+    font-weight: bold;
 }
