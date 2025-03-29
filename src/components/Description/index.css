@@ -1,29 +1,30 @@
 .description-area {
-    display: flex;
-    flex-flow: row wrap;
+    /* display: flex;
+    flex-flow: row wrap; */
+    align-items: flex-start;
     margin-top: 30px;
 }
 
-.description-area .flex-col {
+.description-area>.flex-item {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 30px;
-    width: 50%;
+    /* width: 50%; */
 }
 
-.description-area .flex-col:last-child {
-    width: 100%;
+.description-area>.flex-item:last-child {
+    flex-basis: 100%;
 }
 
 #description-content {
     background-color: #232323;
-    font-family: "Roboto Slab", sans-serif;
+    /* font-family: "Roboto Slab", sans-serif; */
     line-height: 1.6;
     padding: 15px;
 }
 
 #description-content p {
-    margin-bottom: 20.8px;
+    margin-bottom: 1.3rem;
 }
 
 #description-content .icon-box {

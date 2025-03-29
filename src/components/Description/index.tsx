@@ -10,12 +10,12 @@ function Description() {
     ]
 
     return (
-        <div id="description-area" className="description-area">
-            <div id="description-col" className="flex-col">
+        <div id="description-area" className="description-area flex-container">
+            <div id="description-col" className="flex-item">
                 <div id="description-content">
                     <div className="icon-box">
                         <div className="icon-box-img">
-                            <img src="https://gachoitieuphong.com/wp-content/uploads/2024/10/cropped-LOGO-GA-CHOI-TIEU-PHONG-2-300x300.png" 
+                            <img src="./imgs/icon-logo.png" 
                             alt="Logo CLB Gà Chọi Lê Tuấn" />
                         </div>
                         <div className="icon-box-content">
@@ -41,27 +41,27 @@ function Description() {
                     </div>
                 </div>
                 <div id="map-link">
-                    <a href="https://www.google.com/maps/place/CLB+G%C3%A0+Ch%E1%BB%8Di+Ti%C3%AAu+Phong/@12.9911111,109.2351372,15z/data=!4m6!3m5!1s0x316fe94c43271e83:0x7bd335171cc78e16!8m2!3d12.9911111!4d109.2351372!16s%2Fg%2F11vh_bppkr?hl=vi&entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
+                    <a href="https://www.google.com/maps?q=13.0298021,109.2210156&entry=gps&lucs=,94242583,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISEjI1LjExLjMuNzM1NDg4OTYwMBgAIIgnKmwsOTQyNDI1ODMsOTQyMjQ4MjUsOTQyMjcyNDcsOTQyMjcyNDgsOTQyMzExODgsNDcwNzE3MDQsNDcwNjk1MDgsOTQyMTg2NDEsOTQyMDMwMTksNDcwODQzMDQsOTQyMDg0NTgsOTQyMDg0NDdCAlZO&skid=1ecbd6ab-413a-43d3-99b2-1f3033989513&g_st=ifm"
                     target="_blank"
                     >
-                        <img className="contact-img" src="https://i.ibb.co/rRMPCZjQ/map-vector.png" alt="map-vector" />
+                        <img className="contact-img" src="./imgs/map-vector.png" alt="map-vector" />
                     </a>
                 </div>
-                <div id="tiktok">
+                {/* <div id="tiktok">
                     <a href="https://www.tiktok.com/@tieuphonguytin" target="_blank">
                         <img className="contact-img" src="https://i.ibb.co/fZD1gkh/tiktok-vector.png" alt="tiktok-vector" />
                     </a>
-                </div>
+                </div> */}
             </div>
-            <div id="slider" className="flex-col">
+            <div id="slider" className="flex-item">
                 <Carousel></Carousel>
             </div>
-            <div id="contact-info" className="flex-col flex-row">
+            <div id="contact-info" className="flex-item flex-container">
                 <div className="flex-item">
-                    <img src="https://i.ibb.co/mrzQSV60/zl-vip-vector.png" alt="" className="contact-img" />
+                    <img src="./imgs/zl-vip-vector.png" alt="" className="contact-img" />
                 </div>
                 <div className="flex-item">
-                    <img src="https://i.ibb.co/dJkZ92jS/fb-vector.png" alt="" className="contact-img" />
+                    <img src="./imgs/fb-vector.png" alt="" className="contact-img" />
                 </div>
             </div>
         </div>
