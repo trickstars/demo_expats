@@ -1,19 +1,15 @@
 .video-title {
     padding: 15px;
-    font-family: "Roboto Slab", sans-serif;
     font-size: 16px;
     padding-left: 30px;
     padding-bottom: 30px;
     border-left: 2px solid white;
+    text-align: center;
 }
 
-.video-title>span {
-    display: block;
-    font-size: 17px;
-    text-transform: uppercase;
-    font-weight: bold;
-    /* background-color: #fcd52b; */
-    /* border-radius: 40px; */
+.video-title h3 {
+    font-size: 1.25rem;
+    /* text-transform: uppercase; */
     padding: 10px 0;
     margin-bottom: 20px;
 }

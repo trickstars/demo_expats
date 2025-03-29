@@ -7,10 +7,10 @@ function VideoList() {
     return (
         <div id="video-list-page">
         <div className="video-title">
-            <span>
+            <h3>
             ▶️ <span className="color-highlight">Video Xổ Gà Hấp Dẫn CLB Gà Chọi Tiêu Phong</span>
 
-            </span>
+            </h3>
             <p>
               Nơi lưu trữ các video vần gà chọi được quay trực tiếp tại <span className="color-highlight">https://gachoitieuphong.com</span>
             </p>
