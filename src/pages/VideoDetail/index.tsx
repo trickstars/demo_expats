@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './index.css';
 function VideoDetail() {
     return (
-        <div id="video-detail" className='flex-row'>
+        <div id="video-detail" className='flex-container'>
             <div className="video-content">
                 <div className="video-header">
                     <div className="video-title-detail">
@@ -23,7 +23,7 @@ function VideoDetail() {
                     </div>
                     <div className="horizontal-divider"></div>
                     <div className="contact-icons"></div>
-                    <div className="video-navigation flex-row">
+                    <div className="video-navigation flex-container">
                         <div className="prev-video flex-item">
                             <a href="">
                                 <i className="fa-solid fa-angle-left"></i>
@@ -44,17 +44,17 @@ function VideoDetail() {
                 <div className="video-desc">
                     <div className="desc">
                         <p>
-                        <span className='text-bold'>CLB Gà Chọi Tiêu Phong</span> - Xin Hân Hạnh Phục Vụ Anh Em Gần Xa !
+                        <b>CLB Gà Chọi Tiêu Phong</b> - Xin Hân Hạnh Phục Vụ Anh Em Gần Xa !
                         </p>
 
-                        <p>Với nhiều năm kinh nghiệm nuôi dưỡng, chăm sóc và <span className='text-bold'>cung cấp gà chọi, gà đòn</span> 
-                            "Uy Tín - Chất Lượng" <span className='text-bold'>CLB Gà Chọi Tiêu Phong</span> luôn sẵn sàng chia sẽ những kinh nghiệm thực tế, 
+                        <p>Với nhiều năm kinh nghiệm nuôi dưỡng, chăm sóc và <b>cung cấp gà chọi, gà đòn</b> 
+                            "Uy Tín - Chất Lượng" <b>CLB Gà Chọi Tiêu Phong</b> luôn sẵn sàng chia sẽ những kinh nghiệm thực tế, 
                             tư vấn hướng dẫn kỹ thuật làm chuồng trại, phương pháp nuôi để tránh các rủi ro 
                             và rút ngắn các công đoạn chuẩn bị cần thiết trong quá trình nuôi cho các khách hàng 
                             có nhu cầu.</p>
 
                         <p>
-                        Đến với <span className='text-bold'>CLB Gà Chọi Tiêu Phong</span>, khách hàng sẽ nhận được sự tư vấn , hướng dẫn chu đáo nhiệt tình, 
+                        Đến với <b>CLB Gà Chọi Tiêu Phong</b>, khách hàng sẽ nhận được sự tư vấn , hướng dẫn chu đáo nhiệt tình, 
                         đặc biệt giá cả cạnh tranh tình nghĩa. Hy vọng rằng sản phẩm của trang trại sẽ làm hài lòng quý khách hàng.
                         </p>
                     </div>
@@ -68,7 +68,7 @@ function VideoDetail() {
                     </div>
                 </div>
             </div>
-            <div className="sidebar">
+            <div className="post-sidebar">
                 <h3>Xem live trực tiếp</h3>
 
                 <div className="horizontal-divider" style={{marginLeft: 0, marginTop: `10px`}}></div>

@@ -1,7 +1,3 @@
-.text-bold {
-    font-weight: bold !important;
-}
-
 .horizontal-divider {
     margin: 30px auto;
     height: 3px;
@@ -11,6 +7,7 @@
 
 #video-detail {
     padding-top: 30px;
+    align-items: flex-start;
 }
 
 #video-detail>div {
@@ -24,32 +21,27 @@
 }
 
 .video-content>.video-header {
-    text-align: left;
-    padding-bottom: 24px;
-}
-
-.video-content>.video-header>.video-title-detail {
-    font-family: "Roboto", sans-serif;
-    /* font-size: 27.2px; */
+    /* text-align: left; */
+    padding-bottom: 1.5rem;
 }
 
 
 .video-content>.video-header>.video-meta {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 11.2px;
+    /* font-family: "Roboto Slab", sans-serif; */
+    font-size: 0.7rem;
     text-transform: uppercase;
 }
 
 .video-navigation {
     border-top: 0.8px solid white;
     border-bottom: 0.8px solid white;
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 16px;
+    /* font-family: "Roboto Slab", sans-serif; */
+    /* font-size: ; */
 }
 
 .next-video,
 .prev-video {
-    padding: 11.2px 0;
+    padding: 0.7rem 0;
     vertical-align: middle;
     line-height: 38.4px;
 }
@@ -75,23 +67,32 @@
 }
 
 .video-desc p {
-    text-align: left;
-    margin-bottom: 24px;
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 16px;
+    /* text-align: left; */
+    margin-bottom: 1.5rem;
+    /* font-family: "Roboto Slab", sans-serif; */
+    /* font-size: 1rem; */
 }
 
-.sidebar {
+.post-sidebar {
     flex: 1;
     border-left: 1px solid white;
 }
 
-.sidebar h3 {
+.post-sidebar h3 {
     text-transform: uppercase;
-    font-family: "Roboto Slab", sans-serif;
-    text-align: left;
+    font-family: var(--primary-font);
+    /* text-align: left; */
 }
 
-.sidebar .title {
+.post-sidebar .title {
     text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .video-content,
+    .post-sidebar {
+        flex-basis: 100%;
+    }
 }
