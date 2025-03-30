@@ -8,16 +8,19 @@ function Footer() {
                     <img src="./imgs/logo.png" alt="logo" />
                     </div>
                     <div className="footer__decription">
-                        <p>👉 CLB Gà Chọi Lê Tuấn vần xổ gà trực tiếp 18h30  hàng ngày</p>
+                        <p>👉 CLB Gà Chọi Lê Tuấn xổ gà trực tiếp 18h00 hàng ngày</p>
                         <p>👉 Giao lưu mua bán gà chọi đi các tỉnh</p>
                     </div>
                 </div>
                 <div className="flex-item footer-section">
                     <h2>Kết nối đam mê</h2>
                     <div className="phone">
-                        ☎️ 0123456789
+                        ☎️ <a href="tel:+0375777435">0375777435</a> (Anh Tý)
                     </div>
-                    <p>Địa chỉ: Phú Khánh</p>
+                    <div className="phone">
+                        ☎️ <a href="tel:+0354019552">0354019552</a> (Anh Tuấn)
+                    </div>
+                    <p>Địa chỉ: Gò Lớn, TT. Phú Hòa, tỉnh Phú Yên</p>
                 </div>
                 <div className="flex-item footer-section">
                     <h2>Quy định</h2>

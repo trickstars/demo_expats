@@ -136,7 +136,7 @@ function Home() {
             Video xổ gà hay
           </Link>
           <p>
-            Nơi lưu trữ các video vần gà chọi được quay trực tiếp tại <span className="color-highlight">https://gachoitieuphong.com</span>
+            Nơi lưu trữ các video vần gà chọi được quay trực tiếp tại <a href="/" className="color-highlight">https://gachoiletuan.com</a>
           </p>
         </div>
         <VideoListContainer numCol={3}></VideoListContainer>
