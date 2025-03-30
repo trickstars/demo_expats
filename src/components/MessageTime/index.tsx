@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './index.css';
 
 const formatTime = (timestampStr: string) => {
     const timestamp = Date.parse(timestampStr); // Chuyển string thành timestamp (milliseconds)

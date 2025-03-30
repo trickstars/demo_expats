@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
 import './index.css'
 import MessageTime from '../MessageTime';
+import { error } from 'console';
 
 interface Message {
   user: string;
@@ -26,6 +27,9 @@ const ChatBox = () => {
   const [currentClients, setCurrentClients] = useState(0);
   const [isStream, setStreamStatus] = useState<boolean>(true);
   const textAreaRef = useRef<HTMLTextAreaElement>(null)
+  const [missingField, setMissingField] = useState('');
+
+  const isDisabled = !userName.trim() || !newMessage.trim();
 
   useEffect(() => {
     if(socket) {
@@ -103,6 +107,11 @@ const ChatBox = () => {
             start_index: startIndex,
             end_index: endIndex,
           },
+          // headers: {
+          //   "Cache-Control": "no-cache, no-store, must-revalidate",
+          //   Pragma: "no-cache",
+          //   Expires: "0",
+          // }
         }
       );
       const data = JSON.parse(response.data.contents);
@@ -142,7 +151,14 @@ const ChatBox = () => {
 
     // Hàm gửi tin nhắn qua WebSocket
   const sendMessage = () => {
-    if (socket && newMessage.trim()) {
+    if (!userName.trim()) {
+      setMissingField('Vui lòng nhập tên hiển thị');
+    }
+    else if (!newMessage.trim()){
+      setMissingField('Vui lòng nhập nội dung tin nhắn');
+    }
+
+    else if (socket && newMessage.trim()) {
       const message = {
         user: userName, // Bạn có thể thay đổi thành tên người dùng thực tế từ context hoặc state
         content: newMessage,
@@ -169,12 +185,28 @@ const ChatBox = () => {
     }
   }
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLFormElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // Ngăn textarea xuống dòng
+      sendMessage();
+    }
+  };
+
+  // Hàm tắt thông báo thiếu trường
+  useEffect(() => {
+    if (missingField) {
+      const timer = setTimeout(() => {
+        setMissingField('');
+      }, 3000); //Tắt thông báo sau 3 giây
+    }
+  }, [missingField])
+
     return (
         <div className="chat-box flex-container flex-col">
           {/* Chat header */}
           <div className="chat-header">
             <a className='refresh-link' href="/">🔃 [LOAD LẠI TRANG]</a>
-            <span>684 <i className="fa-solid fa-eye"></i></span>
+            <span>{currentClients} <i className="fa-solid fa-eye"></i></span>
           </div>
 
           {/* Thread tin nhắn */}
@@ -188,7 +220,10 @@ const ChatBox = () => {
                   <small className='float-right'>
                     <MessageTime timestamp={message.timestamp}></MessageTime>
                   </small>
-                  <span><strong>{message.user}: </strong> {message.content}</span>
+                  <span><strong>{message.user}: </strong> 
+                  {/* <br /> */}
+                    <span className='justify'>{message.content}</span>
+                  </span>
                 </div>
               </div>
             )})}
@@ -197,7 +232,7 @@ const ChatBox = () => {
           </div>
 
            {/* Form nhap message */}
-          <div className="chat-input">
+          <form onKeyDown={handleKeyDown} className="chat-input">
             <input
               type="text"
               maxLength={25}
@@ -213,9 +248,12 @@ const ChatBox = () => {
                 onChange={handleTextArea}
                 placeholder="Nội dung"
               />
-              <button onClick={sendMessage}><i className="fa-solid fa-paper-plane"></i></button>
+              <button type='button' onClick={sendMessage} disabled={isDisabled}><i className="fa-solid fa-paper-plane"></i></button>
             </div>
-          </div>
+            <div className={`validating-field ${missingField? 'error': ''}`}>
+              <span>{missingField}</span>
+            </div>
+          </form>
         </div>
       );
 };
