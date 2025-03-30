@@ -8,8 +8,8 @@
   --primary-color: black;
   --text-color: white;
   --highlight-color: #fcd52b;
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Roboto Slab', sans-serif;
+  --primary-font: 'Roboto Slab', sans-serif;
+  --secondary-font: 'Roboto', sans-serif;
 }
 
 * {
@@ -36,6 +36,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
 }
 
 a {
@@ -162,6 +171,11 @@ select {
 
 /* Media queries */
 
-/* @media screen and (max-width: 920px) {}
+/* @media screen and (max-width: 920px) {
+} */
 
-@media screen and (max-width: 768px) {} */
+@media screen and (max-width: 768px) {
+  .description-area .flex-item {
+    flex-basis: 100%;
+  }
+}

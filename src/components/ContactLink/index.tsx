@@ -14,7 +14,7 @@ const contactData: Record<ContactType, { url: string; img: string }> = {
     img: "./imgs/fb-vector.png", // Đường dẫn đến ảnh đại diện của Facebook
   },
   zalo: {
-    url: "https://zalo.me/",
+    url: "https://zalo.me/g/yzcvgs023",
     img: "./imgs/zl-vip-vector.png", // Đường dẫn đến ảnh đại diện của Zalo
   },
   map: {

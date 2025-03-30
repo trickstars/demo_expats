@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './index.css';
+import ContactLink from '../../components/ContactLink';
 function VideoDetail() {
     return (
         <div id="video-detail" className='flex-container'>
@@ -58,13 +59,9 @@ function VideoDetail() {
                         đặc biệt giá cả cạnh tranh tình nghĩa. Hy vọng rằng sản phẩm của trang trại sẽ làm hài lòng quý khách hàng.
                         </p>
                     </div>
-                    <div id="contact-info" className="flex-row">
-                        <div className="flex-item">
-                            <img src="https://i.ibb.co/mrzQSV60/zl-vip-vector.png" alt="" className="contact-img" />
-                        </div>
-                        <div className="flex-item">
-                            <img src="https://i.ibb.co/dJkZ92jS/fb-vector.png" alt="" className="contact-img" />
-                        </div>
+                    <div id="contact-info" className="flex-container">
+                        <ContactLink platform="zalo"></ContactLink>
+                        <ContactLink platform="facebook"></ContactLink>
                     </div>
                 </div>
             </div>
