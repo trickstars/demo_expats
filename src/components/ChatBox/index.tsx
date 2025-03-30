@@ -25,7 +25,7 @@ const ChatBox = () => {
   const [newMessage, setNewMessage] = useState<string>(''); // Tin nhắn mới từ người dùng
   const [socket, setSocket] = useState<WebSocket | null>(null); // WebSocket instance
   const [currentClients, setCurrentClients] = useState(0);
-  const [isStream, setStreamStatus] = useState<boolean>(true);
+  // const [isStream, setStreamStatus] = useState<boolean>(true);
   const textAreaRef = useRef<HTMLTextAreaElement>(null)
   const [missingField, setMissingField] = useState('');
 
@@ -68,12 +68,12 @@ const ChatBox = () => {
           console.log('Current clients:', clientsCount);
         } else if (event.data === 'Not streaming right now') {
           // Nếu thông điệp là "Not stream"
-          setStreamStatus(false);
-          console.log('This is not a stream.');
+          // setStreamStatus(false);
+          // console.log('This is not a stream.');
         } else if (event.data === 'Stream') {
           // Nếu thông điệp là "Stream"
-          setStreamStatus(true);
-          console.log('This is a stream.');
+          // setStreamStatus(true);
+          // console.log('This is a stream.');
         } else {
           // Nếu không phải JSON và không phải các thông điệp đã biết
           console.warn('Received unexpected message:', event.data);
@@ -176,9 +176,7 @@ const ChatBox = () => {
   
   const handleTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setNewMessage(e.target.value);
-
-    // Tự động điều chỉnh chiều cao
-    console.log(textAreaRef.current)
+    
     if (textAreaRef.current) {
       textAreaRef.current.style.height = "auto";
       textAreaRef.current.style.height = textAreaRef.current.scrollHeight + "px";
@@ -211,9 +209,7 @@ const ChatBox = () => {
 
           {/* Thread tin nhắn */}
           <div className="chat-messages" onScroll={handleScroll}>
-            {messages.map((message, index) => {
-              // console.log(message.timestamp);
-              return (
+            {messages.map((message, index) => (
               <div key={index} className="message">
                 <img src="./imgs/empty-avatar.png " alt="empty-avatar" height='45px' style={{backgroundColor: 'transparent'}} className='float-left'/>
                 <div className='message-content'>
@@ -226,7 +222,7 @@ const ChatBox = () => {
                   </span>
                 </div>
               </div>
-            )})}
+              ))}
             {loading && <div>Đang tải thêm...</div>}
             {!hasMore && <div>Không còn dữ liệu để tải.</div>}
           </div>
