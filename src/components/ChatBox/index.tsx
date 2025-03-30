@@ -209,6 +209,10 @@ const ChatBox = () => {
 
           {/* Thread tin nhắn */}
           <div className="chat-messages" onScroll={handleScroll}>
+            <div className="disclaimer">
+              <span>⛔Không Cá Cược Dưới Mọi Hình Thức</span>
+            </div>
+
             {messages.map((message, index) => (
               <div key={index} className="message">
                 <img src="./imgs/empty-avatar.png " alt="empty-avatar" height='45px' style={{backgroundColor: 'transparent'}} className='float-left'/>
