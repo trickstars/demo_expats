@@ -3,26 +3,27 @@ import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
 import VideoList from './pages/VideoList';
-import './App.css';
+// import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Carousel from './components/Carousel';
+import VideoDetail from './pages/VideoDetail';
 
 function App() {
   return (
     <>
     <Router>
-      <div className="container">
+    <div className="App">
     <Header></Header>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/video-xo-ga' element={<VideoList />} />
-        </Routes>
-        <Carousel></Carousel>
-      </div>
+        <main className='container'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path='/video-xo-ga' element={<VideoList />} />
+            {/* temporary */}
+            <Route path='/video-chitiet' element={<VideoDetail />}></Route>
+          </Routes>
+        </main>
     <Footer></Footer>
-      </div>
+    </div>
     </Router>
     </>
   );

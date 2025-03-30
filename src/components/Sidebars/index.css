@@ -1,0 +1,111 @@
+/* Nút menu */
+.menu-bars {
+    background-color: transparent;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 99px;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.5rem 0;
+    font-weight: 700;
+}
+
+.menu-bars:hover {
+    background-color: #fff;
+}
+
+.menu-bars i {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.menu-bars span {
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    /* Màu nền trắng mờ */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Ẩn sidebar ban đầu */
+    width: 250px;
+    height: 100vh;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    padding-top: 1.25rem;
+    z-index: 1001;
+}
+
+.sidebar.open {
+    left: 0;
+    /* Hiện sidebar */
+}
+
+.sidebar li {
+    display: block;
+    /* background-color: aqua; */
+    border-bottom: 1px solid #ccc;
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: black;
+}
+
+.sidebar li a {
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    /* background-color: #f0f0f0; */
+}
+
+.sidebar li a:hover {
+    background-color: #f0f0f0;
+    /* color: #000; */
+    cursor: pointer;
+}
+
+/* Nút đóng */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-bars span {
+        display: none;
+    }
+
+    /* .menu-bars {
+        border-radius: 50%;
+    } */
+}

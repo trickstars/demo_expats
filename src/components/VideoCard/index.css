@@ -1,0 +1,46 @@
+.video-card {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 0 15px;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.video-info {
+    padding: 8px;
+}
+
+.video-info h5 {
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.video-info p {
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* @media screen and (max-width: 920px) {
+} */
+
+/* @media screen and (max-width: 768px) {
+    .video-card {
+        flex-basis: 100%;
+    }
+} */
