@@ -22,7 +22,9 @@
 }
 
 .chat-col {
-    flex: 1;
+    flex-basis: 1
+        /* flex: 1; */
+        /* min-width: 0; */
 }
 
 /* Video list area */

@@ -3,6 +3,7 @@ import VideoListContainer from "../../components/VideoListContainer";
 import ChatBox from "../../components/ChatBox";
 import './index.css'
 import Description from "../../components/Description";
+import ContactLink from "../../components/ContactLink";
 function Home() {
     return (
       <div id="home">
@@ -26,6 +27,10 @@ function Home() {
           <div className="chat-col flex-item">
             <ChatBox></ChatBox>
           </div>
+        </div>
+        
+        <div id="banner-area" style={{marginTop: '1rem'}}>
+          <img src="./imgs/banner-cropped.png" alt="Banner" />
         </div>
 
         <div id="videos-area">
