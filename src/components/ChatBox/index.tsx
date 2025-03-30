@@ -65,11 +65,11 @@ const ChatBox = () => {
         } else if (event.data === 'Not streaming right now') {
           // Nếu thông điệp là "Not stream"
           setStreamStatus(false);
-          console.log('This is not a stream.');
+          // console.log('This is not a stream.');
         } else if (event.data === 'Stream') {
           // Nếu thông điệp là "Stream"
           setStreamStatus(true);
-          console.log('This is a stream.');
+          // console.log('This is a stream.');
         } else {
           // Nếu không phải JSON và không phải các thông điệp đã biết
           console.warn('Received unexpected message:', event.data);
@@ -160,9 +160,7 @@ const ChatBox = () => {
   
   const handleTextArea = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setNewMessage(e.target.value);
-
-    // Tự động điều chỉnh chiều cao
-    console.log(textAreaRef.current)
+    
     if (textAreaRef.current) {
       textAreaRef.current.style.height = "auto";
       textAreaRef.current.style.height = textAreaRef.current.scrollHeight + "px";
@@ -180,18 +178,26 @@ const ChatBox = () => {
           {/* Thread tin nhắn */}
           <div className="chat-messages" onScroll={handleScroll}>
             {messages.map((message, index) => {
-              // console.log(message.timestamp);
               return (
-              <div key={index} className="message">
-                <img src="./imgs/empty-avatar.png " alt="empty-avatar" height='45px' style={{backgroundColor: 'transparent'}} className='float-left'/>
-                <div className='message-content'>
-                  <small className='float-right'>
-                    <MessageTime timestamp={message.timestamp}></MessageTime>
-                  </small>
-                  <span><strong>{message.user}: </strong> {message.content}</span>
+                <div key={index} className="message">
+                  <img 
+                    src="./imgs/empty-avatar.png " 
+                    alt="empty-avatar" 
+                    height='45px' 
+                    style={{backgroundColor: 'transparent'}} 
+                    className='float-left'/>
+                  <div className='message-content'>
+                    <small className='float-right'>
+                      <MessageTime timestamp={message.timestamp}></MessageTime>
+                    </small>
+                    <span>
+                      <strong>{message.user}: </strong>
+                      <span className='messageContent'>{message.content}</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            )})}
+              )
+            })}
             {loading && <div>Đang tải thêm...</div>}
             {!hasMore && <div>Không còn dữ liệu để tải.</div>}
           </div>
