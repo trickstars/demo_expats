@@ -7,9 +7,9 @@ function Carousel() {
 
     // Danh sách các ảnh mẫu
     const images = [
-      'https://gachoitieuphong.com/wp-content/uploads/2024/10/cropped-LOGO-GA-CHOI-TIEU-PHONG-2-300x300.png',
-      'https://gachoitieuphong.com/wp-content/uploads/2024/10/cropped-LOGO-GA-CHOI-TIEU-PHONG-2-300x300.png',
-      'https://gachoitieuphong.com/wp-content/uploads/2024/10/cropped-LOGO-GA-CHOI-TIEU-PHONG-2-300x300.png',
+      './imgs/slide1.jpg',
+      './imgs/slide2.png',
+      './imgs/slide3.jpg',
     ];
   
     // Hàm chuyển sang ảnh tiếp theo
