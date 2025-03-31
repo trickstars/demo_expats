@@ -56,6 +56,7 @@ function Description() {
             <div id="contact-info" className="flex-item flex-container">
                 <ContactLink platform="zalo"></ContactLink>
                 <ContactLink platform="facebook"></ContactLink>
+                <ContactLink platform="zalo_vip"></ContactLink>
             </div>
         </div>
     )

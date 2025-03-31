@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 
 // Chỉ cho phép các giá trị cố định
-type ContactType = "facebook" | "zalo" | "map";
+type ContactType = "facebook" | "zalo" | "map" | "zalo_vip";
 
 interface ContactLinkProps {
   platform: ContactType;
@@ -13,7 +13,7 @@ const contactData: Record<ContactType, { url: string; img: string }> = {
     url: "https://www.facebook.com/gachoiletuan",
     img: "./imgs/fb-vector.png", // Đường dẫn đến ảnh đại diện của Facebook
   },
-  zalo: {
+  zalo_vip: {
     url: "https://zalo.me/g/yzcvgs023",
     img: "./imgs/zl-vip-vector.png", // Đường dẫn đến ảnh đại diện của Zalo
   },
@@ -21,7 +21,11 @@ const contactData: Record<ContactType, { url: string; img: string }> = {
     url: "https://www.google.com/maps?q=13.0298021,109.2210156&entry=gps&lucs=,94242583,94224825,94227247,94227248,94231188,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISEjI1LjExLjMuNzM1NDg4OTYwMBgAIIgnKmwsOTQyNDI1ODMsOTQyMjQ4MjUsOTQyMjcyNDcsOTQyMjcyNDgsOTQyMzExODgsNDcwNzE3MDQsNDcwNjk1MDgsOTQyMTg2NDEsOTQyMDMwMTksNDcwODQzMDQsOTQyMDg0NTgsOTQyMDg0NDdCAlZO&skid=1ecbd6ab-413a-43d3-99b2-1f3033989513&g_st=ifm",
     img: "./imgs/map-vector.png"
   },
-  // banner: {
+  zalo: {
+    url: "https://zalo.me/g/dzgwnk057",
+    img: "./imgs/zl-vector.png"
+  }
+    // banner: {
   //   url: "",
   //   img: "./imgs/banner.jpg",
   // }
