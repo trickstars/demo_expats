@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/demo_expats/static/css/main.e6c4b1ed.css",
+    "main.js": "/demo_expats/static/js/main.6a3aaed0.js",
+    "static/js/453.45aa5dc5.chunk.js": "/demo_expats/static/js/453.45aa5dc5.chunk.js",
+    "index.html": "/demo_expats/index.html",
+    "main.e6c4b1ed.css.map": "/demo_expats/static/css/main.e6c4b1ed.css.map",
+    "main.6a3aaed0.js.map": "/demo_expats/static/js/main.6a3aaed0.js.map",
+    "453.45aa5dc5.chunk.js.map": "/demo_expats/static/js/453.45aa5dc5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c4b1ed.css",
+    "static/js/main.6a3aaed0.js"
+  ]
+}
