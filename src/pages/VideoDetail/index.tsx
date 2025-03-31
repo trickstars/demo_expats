@@ -1,7 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './index.css';
 import ContactLink from '../../components/ContactLink';
+import { useEffect, useState } from 'react';
 function VideoDetail() {
+    const {id} = useParams();
+    const [playBackUrl, setPlaybackUrl] = useState("");
+
+    useEffect(() => {
+        const url = sessionStorage.getItem(`video_${id}`);
+        if (url) {
+            setPlaybackUrl(url);
+        }
+        else {
+            console.error("Playback URL not founded in this tab")
+        }
+    },[id])
+
     return (
         <div id="video-detail" className='flex-container'>
             <div className="video-content">
@@ -16,11 +30,11 @@ function VideoDetail() {
                 </div>
                 <div className="video-frame">
                     <div className="main-video">
-                    <video controls width="100%">
-                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" 
-                        type="video/mp4" />
-                        Trình duyệt của bạn không hỗ trợ video tag.
-                    </video>
+                    {playBackUrl? (
+                        <iframe src={`https://iframe.mediadelivery.net/embed/${playBackUrl}`} width='100%' height='400px' title='Video Player' />
+                    ) : (
+                        <p>Cannot load video</p>
+                    )}
                     </div>
                     <div className="horizontal-divider"></div>
                     <div className="contact-icons"></div>
@@ -45,23 +59,24 @@ function VideoDetail() {
                 <div className="video-desc">
                     <div className="desc">
                         <p>
-                        <b>CLB Gà Chọi Tiêu Phong</b> - Xin Hân Hạnh Phục Vụ Anh Em Gần Xa !
+                        <b>CLB Gà Chọi Lê Tuấn</b> - Xin Hân Hạnh Phục Vụ Anh Em Gần Xa !
                         </p>
 
                         <p>Với nhiều năm kinh nghiệm nuôi dưỡng, chăm sóc và <b>cung cấp gà chọi, gà đòn</b> 
-                            "Uy Tín - Chất Lượng" <b>CLB Gà Chọi Tiêu Phong</b> luôn sẵn sàng chia sẽ những kinh nghiệm thực tế, 
+                            "Uy Tín - Chất Lượng" <b>CLB Gà Chọi Lê Tuấn</b> luôn sẵn sàng chia sẽ những kinh nghiệm thực tế, 
                             tư vấn hướng dẫn kỹ thuật làm chuồng trại, phương pháp nuôi để tránh các rủi ro 
                             và rút ngắn các công đoạn chuẩn bị cần thiết trong quá trình nuôi cho các khách hàng 
                             có nhu cầu.</p>
 
                         <p>
-                        Đến với <b>CLB Gà Chọi Tiêu Phong</b>, khách hàng sẽ nhận được sự tư vấn , hướng dẫn chu đáo nhiệt tình, 
+                        Đến với <b>CLB Gà Chọi Lê Tuấn</b>, khách hàng sẽ nhận được sự tư vấn , hướng dẫn chu đáo nhiệt tình, 
                         đặc biệt giá cả cạnh tranh tình nghĩa. Hy vọng rằng sản phẩm của trang trại sẽ làm hài lòng quý khách hàng.
                         </p>
                     </div>
                     <div id="contact-info" className="flex-container">
                         <ContactLink platform="zalo"></ContactLink>
                         <ContactLink platform="facebook"></ContactLink>
+                        <ContactLink platform='zalo_vip'></ContactLink>
                     </div>
                 </div>
             </div>
@@ -77,7 +92,7 @@ function VideoDetail() {
 
                 <div className="sidebar-thumbnail">
                     <Link to="/">
-                        <img src="https://gachoitieuphong.com/wp-content/uploads/2024/10/cropped-LOGO-GA-CHOI-TIEU-PHONG-2-300x300.png" alt="" />
+                        <img src="/imgs/icon-logo.png" alt="" />
                     </Link>
                 </div>
 

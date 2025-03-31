@@ -19,7 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path='/video-xo-ga' element={<VideoList />} />
             {/* temporary */}
-            <Route path='/video-chitiet' element={<VideoDetail />}></Route>
+            <Route path='/videos/:id' element={<VideoDetail />}></Route>
           </Routes>
         </main>
     <Footer></Footer>

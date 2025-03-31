@@ -18,7 +18,7 @@ function Header() {
                         <Link to='/'>
                         {/* <img src="https://i.ibb.co/B5XFx4Tq/logo.png" alt="logo" /> */}
                         <img 
-                            src="./imgs/Thie-t-ke-chu-a-co-te-n.png" 
+                            src="/imgs/Thie-t-ke-chu-a-co-te-n.png" 
                             alt="Thie-t-ke-chu-a-co-te-n.png" 
                             width='200px'>
                         </img>

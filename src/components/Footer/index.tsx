@@ -5,7 +5,7 @@ function Footer() {
             <div className="footer flex-container container">
                 <div className="flex-item footer-section">
                     <div className="footer__logo">
-                    <img src="./imgs/logo.png" alt="logo" />
+                    <img src="/imgs/logo.png" alt="logo" />
                     </div>
                     <div className="footer__decription">
                         <p>👉 CLB Gà Chọi Lê Tuấn xổ gà trực tiếp 18h00 hàng ngày</p>
